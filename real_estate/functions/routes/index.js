@@ -1,10 +1,11 @@
 var express = require("express");
 var router = express.Router();
+var unirest = require("unirest");
+const request = require("request-promise");
 
 /* GET home page. */
 router.get("/", (req, res, next) => {
   let realEstates = [];
-  // Get data from API
   // Refine data
   res.render("index", { title: "Express", realEstates: realEstates });
 });
