@@ -10,20 +10,21 @@
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-<!-- <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.3.4/animate.css"> -->
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.3.4/animate.css">
 <link
       type="text/css"
       rel="stylesheet"
       href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css"
     />
+<link rel="stylesheet" type="text/css" href="/css/common.css">
 <% if(typeof cssFiles !== 'undefined') { %>
   <% cssFiles.forEach( cssFile => { %>
     <link rel="stylesheet" type="text/css" href="<%= cssFile %>">
   <% }) %>
 <% } %>
 </head>
-<body>
 
+<body>
 <div class="super_container">
 	<div class="super_overlay"></div>
 	<!-- Header -->
@@ -34,26 +35,25 @@
 				<ul class="d-flex flex-row align-items-center justify-content-start">
 					<!-- Phone -->
 					<li class="d-flex flex-row align-items-center justify-content-start">
-						<div><img src="images/phone-call.svg" alt=""></div>
+						<!-- <div><img src="images/phone-call.svg" alt=""></div> -->
 						<span>+416 415-2000</span>
 					</li>
 					<!-- Address -->
 					<li class="d-flex flex-row align-items-center justify-content-start">
-						<div><img src="images/placeholder.svg" alt=""></div>
+						<!-- <div><img src="images/placeholder.svg" alt=""></div> -->
 						<span>160 Kendal Ave, Toronto, ON M5R 1M3</span>
 					</li>
 					<!-- Email -->
 					<li class="d-flex flex-row align-items-center justify-content-start">
-						<div><img src="images/envelope.svg" alt=""></div>
+						<!-- <div><img src="images/envelope.svg" alt=""></div> -->
 						<span>nests@companyinfo.com</span>
 					</li>
 				</ul>
 			</div>
 			<div class="ml-auto d-flex flex-row align-items-center justify-content-start">
 				<div class="log_reg d-flex flex-row align-items-center justify-content-start">
-					<ul class="d-flex flex-row align-items-start justify-content-start">
-						<li><a href="/user/signin">Login</a></li>
-						<li><a href="/user/signin" class="btn btn-default">Register</a></li>
+					<ul  id="right-links" class="d-flex flex-row align-items-start justify-content-start">
+						<li><a href="/user/signin" class="btn btn-default">Login / Register</a></li>
 					</ul>
 				</div>
 			</div>
@@ -78,9 +78,8 @@
 		<div class="menu_close"><i class="fa fa-times" aria-hidden="true"></i></div>
 		<div class="menu_log_reg">
 			<div class="log_reg d-flex flex-row align-items-center justify-content-end">
-				<ul class="d-flex flex-row align-items-start justify-content-start">
-					<li><a href="/user/signin">Login</a></li>
-          <li><a href="/user/signin">Register</a></li>	
+				<ul id="right-links" class="d-flex flex-row align-items-start justify-content-start">
+          <li><a href="/user/signin">Login / Register</a></li>
 				</ul>
 			</div>
 			<nav class="menu_nav">
@@ -92,18 +91,18 @@
 		</div>
 	</div>
   <%- body %>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/plugins/ScrollToPlugin.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-  <script src="plugins/OwlCarousel2-2.3.4/owl.carousel.js"></script>
-  <script src="plugins/progressbar/progressbar.min.js"></script>
-  <script src="plugins/parallax-js-master/parallax.min.js"></script>
+  <script src="/plugins/OwlCarousel2-2.3.4/owl.carousel.js"></script>
+  <script src="/plugins/progressbar/progressbar.min.js"></script>
+  <script src="/plugins/parallax-js-master/parallax.min.js"></script>
   <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
   <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
   <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->

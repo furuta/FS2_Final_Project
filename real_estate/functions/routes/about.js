@@ -4,7 +4,7 @@ var router = express.Router();
 /* GET users listing. */
 let title = "About us";
 router.get("/", (req, res, next) => {
-  let cssFiles = ["css/about.css", "css/about_responsive.css"];
+  let cssFiles = ["css/about.css", "css/responsive.css"];
   let jsFiles = ["js/about.js"];
   let activePage = "about";
 

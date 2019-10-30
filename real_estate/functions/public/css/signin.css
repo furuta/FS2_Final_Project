@@ -9,12 +9,13 @@ body {
 }
 
 #login-box {
-  position: relative;
-  margin: 5% auto;
-  height: 324px;
-  width: 600px;
-  background: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  margin-top: 200px;
+  /* position: relative; */
+  /* margin: 5% auto; */
+  /* height: 324px; */
+  /* width: 600px; */
+  /* background: #fff; */
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); */
 }
 
 .left-box {

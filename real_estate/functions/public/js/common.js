@@ -1,3 +1,5 @@
+"use strict";
+
 // My web app's Firebase configuration
 var firebaseConfig = {
   apiKey: "AIzaSyAeuydT97vA6hiuBDpUT-_TJnY494rQiO4",
@@ -10,3 +12,32 @@ var firebaseConfig = {
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
+
+let afterAuthEvent = user => {
+  console.log(user);
+};
+
+function signOut() {
+  firebase.auth().onAuthStateChanged(user => {
+    firebase
+      .auth()
+      .signOut()
+      .then(() => {
+        console.log("Complete signout.");
+        return "";
+      })
+      .catch(error => {
+        console.log(`Signout error (${error})`);
+      });
+  });
+}
+
+$(() => {
+  firebase.auth().onAuthStateChanged(user => {
+    console.log(afterAuthEvent);
+    if (user) {
+      $("#right-links").html('<li><a href="/user">User profile</a></li>');
+    }
+    afterAuthEvent(user);
+  });
+});

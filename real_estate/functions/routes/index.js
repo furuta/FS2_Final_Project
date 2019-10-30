@@ -9,7 +9,7 @@ router.get("/", (req, res, next) => {
   let realEstates = [];
   let cssFiles = ["css/main_styles.css", "css/responsive.css"];
   let jsFiles = [
-    "https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCIwF204lFZg1y4kPSIhKaHEXMLYxxuMhA",
+    // "https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCIwF204lFZg1y4kPSIhKaHEXMLYxxuMhA",
     "js/custom.js"
   ];
   let activePage = "home";

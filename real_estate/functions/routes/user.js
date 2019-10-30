@@ -3,7 +3,13 @@ var router = express.Router();
 
 /* GET users listing. */
 router.get("/", (req, res, next) => {
-  res.render("user", { title: "User Page" });
+  let jsFiles = ["/js/user.js"];
+  let cssFiles = ["css/user.css", "css/responsive.css"];
+  res.render("user", {
+    title: "User Page",
+    cssFiles: cssFiles,
+    jsFiles: jsFiles
+  });
 });
 
 router.get("/signin", (req, res, next) => {
