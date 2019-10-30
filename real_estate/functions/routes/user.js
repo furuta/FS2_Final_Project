@@ -7,7 +7,20 @@ router.get("/", (req, res, next) => {
 });
 
 router.get("/signin", (req, res, next) => {
-  res.render("signin", { title: "Signin Page" });
+  let cssFiles = [
+    "/css/main_styles.css",
+    "/css/responsive.css",
+    "/css/signin.css"
+  ];
+  let jsFiles = [
+    "https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js",
+    "/js/signin.js"
+  ];
+  res.render("signin", {
+    title: "Signin Page",
+    cssFiles: cssFiles,
+    jsFiles: jsFiles
+  });
 });
 
 router.get("/logout", (req, res, next) => {
