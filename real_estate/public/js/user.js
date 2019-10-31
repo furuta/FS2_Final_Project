@@ -6,6 +6,6 @@ afterAuthEvent = user => {
     $("#profile").append(`<p>Email: ${user.email}</p>`);
   } else {
     // No user is signed in.
-    window.location.href = "/user/login";
+    window.location.href = "/user/signin";
   }
 };

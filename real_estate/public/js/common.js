@@ -24,7 +24,7 @@ function signOut() {
       .signOut()
       .then(() => {
         console.log("Complete signout.");
-        return "";
+        window.location.href = "/";
       })
       .catch(error => {
         console.log(`Signout error (${error})`);
@@ -36,7 +36,9 @@ $(() => {
   firebase.auth().onAuthStateChanged(user => {
     console.log(afterAuthEvent);
     if (user) {
-      $("#right-links").html('<li><a href="/user">User profile</a></li>');
+      $("#right-links").html(
+        '<li><a href="/user">User profile</a></li><li><a href="" onclick="signOut()">logout</a></li>'
+      );
     }
     afterAuthEvent(user);
   });

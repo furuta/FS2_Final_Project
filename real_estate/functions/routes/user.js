@@ -29,11 +29,4 @@ router.get("/signin", (req, res, next) => {
   });
 });
 
-router.get("/logout", (req, res, next) => {
-  // Logout function
-  // Redirect login page
-  firebase.auth().signOut();
-  res.send("respond with a resource");
-});
-
 module.exports = router;

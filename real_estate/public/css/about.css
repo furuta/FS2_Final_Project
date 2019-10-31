@@ -22,6 +22,7 @@
   display: inline-block;
   padding: 10px;
   width: 300px;
+  vertical-align: top;
 }
 
 .member .pic_tomo {
@@ -33,9 +34,9 @@
 }
 
 .member .pic_devin {
-  /* background-image: url("/images/tomo.png"); */
+  background-image: url("/images/devin.png");
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   height: 280px;
   width: 280px;
 }
