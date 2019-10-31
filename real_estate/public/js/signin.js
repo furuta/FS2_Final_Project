@@ -29,7 +29,8 @@ function signin() {
     signInSuccessUrl: "/user",
     signInOptions: [
       // サポートするプロバイダ(メールアドレス)を指定
-      firebase.auth.EmailAuthProvider.PROVIDER_ID
+      firebase.auth.EmailAuthProvider.PROVIDER_ID,
+      firebase.auth.GoogleAuthProvider.PROVIDER_ID
     ]
     // Terms of service url.
     // tosUrl: "<your-tos-url>"
