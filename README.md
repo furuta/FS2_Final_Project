@@ -35,3 +35,5 @@ Move to top directory
 Start server  
 `firebase serve`  
 and open http://localhost:5000 on your browser
+
+*You need to be added to the Firebase project as a member.
