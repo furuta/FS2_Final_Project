@@ -24,6 +24,10 @@ It is composed of Authentication, Hosting, and Functions of Firebase.
 
 ## Application testing instructions
 
+The site is already deployed here https://fs2-final-project.web.app/
+
+### How to show on local PC
+
 Clone the GitHub repository  
 `git clone https://github.com/furuta/FS2_Final_Project.git`  
 Move to functions directory  
