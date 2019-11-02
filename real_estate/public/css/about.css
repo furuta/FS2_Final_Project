@@ -40,3 +40,17 @@
   height: 280px;
   width: 280px;
 }
+
+.member .pic_pawel {
+  background-image: url("/images/pawel.png");
+  background-size: cover;
+  background-position: bottom;
+  height: 280px;
+  width: 280px;
+  transform: rotate(90deg);
+}
+
+.box {
+  border: 2px black solid;
+  text-align: center;
+}

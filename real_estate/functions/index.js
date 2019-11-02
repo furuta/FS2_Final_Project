@@ -9,7 +9,7 @@ const expressLayouts = require("express-ejs-layouts");
 const indexRouter = require("./routes/index");
 const userRouter = require("./routes/user");
 const aboutRouter = require("./routes/about");
-// const housesRouter = require("./routes/houses");
+const findDataRouter = require("./routes/findData");
 
 const app = express();
 
@@ -27,6 +27,7 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use("/", indexRouter);
 app.use("/user", userRouter);
 app.use("/about", aboutRouter);
+app.use("/search", findDataRouter);
 // app.use("/houses", housesRouter);
 
 // catch 404 and forward to error handler
