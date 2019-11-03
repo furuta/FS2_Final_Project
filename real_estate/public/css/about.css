@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+.intro {
+  background: #ffffff;
+  padding-top: 92px;
+  padding-bottom: 92px;
+}
+.intro_text {
+  margin-top: 36px;
+}
+.intro_button {
+  margin-top: 47px;
+}
+.intro_image {
+  height: 100%;
+}
+.intro_image > img {
+  display: none;
+}
+
+.member {
+  display: inline-block;
+  padding: 10px;
+  width: 300px;
+  vertical-align: top;
+}
+
+.member .pic_tomo {
+  background-image: url("/images/tomo.png");
+  background-size: cover;
+  background-position: center;
+  height: 280px;
+  width: 280px;
+}
+
+.member .pic_devin {
+  background-image: url("/images/devin.png");
+  background-size: cover;
+  background-position: bottom;
+  height: 280px;
+  width: 280px;
+}
+
+.member .pic_pawel {
+  background-image: url("/images/pawel.png");
+  background-size: cover;
+  background-position: bottom;
+  height: 280px;
+  width: 280px;
+  transform: rotate(90deg);
+}
+
+.box {
+  border: 2px black solid;
+  text-align: center;
+}
